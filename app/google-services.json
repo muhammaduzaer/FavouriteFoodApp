@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "788928455172",
+    "project_id": "favoritefoodapp-cff55",
+    "storage_bucket": "favoritefoodapp-cff55.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:788928455172:android:fa284cfbe88765e39fcb51",
+        "android_client_info": {
+          "package_name": "com.muhammaduzaer.favfoodcollection"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "788928455172-4rh8ve4i6gg02lkc4hb7qt9md1bdngju.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDoAmsVeoTc2tXE24CkxPGVDswEwbW1bYQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "788928455172-4rh8ve4i6gg02lkc4hb7qt9md1bdngju.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

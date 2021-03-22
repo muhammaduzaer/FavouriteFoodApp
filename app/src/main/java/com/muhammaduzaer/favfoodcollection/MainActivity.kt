@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.navigation.NavController
 import androidx.navigation.findNavController
+import androidx.navigation.ui.setupWithNavController
+import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.muhammaduzaer.favfoodcollection.databinding.ActivityMainBinding
 import com.muhammaduzaer.favfoodcollection.extensions.gone
 import com.muhammaduzaer.favfoodcollection.extensions.visible
@@ -18,7 +20,10 @@ class MainActivity : AppCompatActivity() {
         mainBinding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(mainBinding.root)
 
+        val bottomNavMenu = mainBinding.bottomNav
+
         navController = findNavController(R.id.fragmentContainerView)
+        bottomNavMenu.setupWithNavController(navController)
 
     }
 

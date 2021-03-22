@@ -7,10 +7,11 @@
     android:background="@color/primaryDarkColor">
 
     <TextView
+        android:id="@+id/textViewAppName"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:text="@string/favorite_food_app"
-        android:gravity="center"
+        android:textAlignment="center"
         android:textSize="36sp"
         android:fontFamily="@font/kaushan_script_regular"
         android:textStyle="bold"
