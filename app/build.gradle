@@ -60,4 +60,7 @@ dependencies {
     implementation 'com.google.firebase:firebase-analytics-ktx'
     implementation 'com.google.firebase:firebase-crashlytics-ktx'
 
+    //sdp (scalable density pixels lib)
+    implementation 'com.intuit.sdp:sdp-android:1.0.6'
+
 }

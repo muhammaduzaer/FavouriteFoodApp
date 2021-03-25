@@ -2,7 +2,7 @@ package com.muhammaduzaer.favfoodcollection.fragments.base
 
 import android.os.Bundle
 import android.view.View
-import com.muhammaduzaer.favfoodcollection.MainActivity
+import com.muhammaduzaer.favfoodcollection.activities.main.MainActivity
 
 open class BottomBaseFragment : BaseFragment() {
 

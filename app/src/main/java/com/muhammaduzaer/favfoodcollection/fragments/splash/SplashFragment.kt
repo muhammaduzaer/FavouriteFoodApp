@@ -1,6 +1,5 @@
-package com.muhammaduzaer.favfoodcollection.fragments.ui.splash
+package com.muhammaduzaer.favfoodcollection.fragments.splash
 
-import android.app.Fragment
 import android.os.Build
 import android.os.Bundle
 import android.os.Handler
@@ -9,13 +8,10 @@ import android.view.*
 import android.view.animation.Animation
 import android.view.animation.AnimationUtils
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContextCompat
 import com.muhammaduzaer.favfoodcollection.R
 import com.muhammaduzaer.favfoodcollection.databinding.FragmentSplashBinding
 import com.muhammaduzaer.favfoodcollection.fragments.base.NonBottomBaseFragment
-import kotlinx.coroutines.CoroutineScope
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.delay
-import kotlinx.coroutines.launch
 
 
 class SplashFragment : NonBottomBaseFragment() {
@@ -33,9 +29,8 @@ class SplashFragment : NonBottomBaseFragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
-            (activity as? AppCompatActivity)?.window?.insetsController?.hide(WindowInsets.Type.statusBars())
-        }
+        (activity as? AppCompatActivity)?.window?.statusBarColor =
+                ContextCompat.getColor(requireContext(), R.color.primaryDarkColor)
 
         bindingSplash = FragmentSplashBinding.bind(view)
 

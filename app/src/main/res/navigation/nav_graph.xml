@@ -7,22 +7,25 @@
 
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.muhammaduzaer.favfoodcollection.fragments.ui.home.HomeFragment"
+        android:name="com.muhammaduzaer.favfoodcollection.fragments.home.ui.HomeFragment"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" />
+
     <fragment
         android:id="@+id/favoritesFragment"
-        android:name="com.muhammaduzaer.favfoodcollection.fragments.ui.favorites.FavoritesFragment"
+        android:name="com.muhammaduzaer.favfoodcollection.fragments.favorites.FavoritesFragment"
         android:label="fragment_favorites"
         tools:layout="@layout/fragment_favorites" />
+
     <fragment
         android:id="@+id/notificationsFragment"
-        android:name="com.muhammaduzaer.favfoodcollection.fragments.ui.notifications.NotificationsFragment"
+        android:name="com.muhammaduzaer.favfoodcollection.fragments.notifications.NotificationsFragment"
         android:label="fragment_notifications"
         tools:layout="@layout/fragment_notifications" />
+
     <fragment
         android:id="@+id/splashFragment"
-        android:name="com.muhammaduzaer.favfoodcollection.fragments.ui.splash.SplashFragment"
+        android:name="com.muhammaduzaer.favfoodcollection.fragments.splash.SplashFragment"
         android:label="fragment_splash"
         tools:layout="@layout/fragment_splash" >
         <action
@@ -31,4 +34,16 @@
             app:popUpTo="@id/splashFragment"
             app:popUpToInclusive="true" />
     </fragment>
+    <fragment
+        android:id="@+id/addNewItemFragment"
+        android:name="com.muhammaduzaer.favfoodcollection.fragments.addnewitem.AddNewItemFragment"
+        android:label="fragment_add_new_item"
+        tools:layout="@layout/fragment_add_new_item" >
+        <action
+            android:id="@+id/action_addNewItemFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/addNewItemFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
 </navigation>

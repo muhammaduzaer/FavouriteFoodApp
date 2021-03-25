@@ -1,4 +1,4 @@
-package com.muhammaduzaer.favfoodcollection.fragments.ui.favorites
+package com.muhammaduzaer.favfoodcollection.fragments.notifications
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -8,7 +8,7 @@ import android.view.ViewGroup
 import com.muhammaduzaer.favfoodcollection.R
 
 
-class FavoritesFragment : Fragment() {
+class NotificationsFragment : Fragment() {
 
 
     override fun onCreateView(
@@ -16,7 +16,7 @@ class FavoritesFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_favorites, container, false)
+        return inflater.inflate(R.layout.fragment_notifications, container, false)
     }
 
 }
